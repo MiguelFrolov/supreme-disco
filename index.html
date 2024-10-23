@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduStart - Revolutionizing Education</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
@@ -18,7 +18,7 @@
         .feature-icon {
             font-size: 30px;
             margin-right: 10px;
-            color: #007bff; /* Bootstrap primary color */
+            color: #3b82f6; /* Tailwind blue */
         }
         .feature-item {
             display: flex;
@@ -29,71 +29,68 @@
         }
     </style>
 </head>
-<body>
-    <header class="bg-primary text-white text-center py-5">
-        <h1>EduStart</h1>
-        <p>Revolutionizing Education for a Brighter Future</p>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white text-center py-5">
+        <h1 class="text-4xl font-bold">EduStart</h1>
+        <p class="text-lg">Revolutionizing Education for a Brighter Future</p>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">EduStart</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#future-plans">Future Plans</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-                </ul>
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a class="text-2xl font-bold text-blue-600" href="#">EduStart</a>
+                <div class="hidden md:flex space-x-4">
+                    <a class="text-gray-700 hover:text-blue-600" href="#mission">Mission</a>
+                    <a class="text-gray-700 hover:text-blue-600" href="#features">Features</a>
+                    <a class="text-gray-700 hover:text-blue-600" href="#future-plans">Future Plans</a>
+                    <a class="text-gray-700 hover:text-blue-600" href="#team">Our Team</a>
+                    <a class="text-gray-700 hover:text-blue-600" href="#contact">Contact Us</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main class="container my-5">
+    <main class="container mx-auto my-5 p-5 bg-white shadow-md rounded">
         <section id="mission">
-            <h2 class="mb-4">Our Mission</h2>
+            <h2 class="text-3xl font-semibold mb-4">Our Mission</h2>
             <p>At EduStart, we aim to provide accessible and personalized education to learners around the globe, leveraging technology to enhance the learning experience.</p>
         </section>
 
         <section id="features" class="my-5">
-            <h2 class="mb-4">Features</h2>
+            <h2 class="text-3xl font-semibold mb-4">Features</h2>
             <ul class="list-group">
-                <li class="list-group-item feature-item">
+                <li class="list-group-item feature-item p-4 border-b">
                     <i class="feature-icon fas fa-chalkboard-teacher"></i>
                     <div>
-                        <h5>Interactive Learning Modules</h5>
+                        <h5 class="font-semibold">Interactive Learning Modules</h5>
                         <p>Engage with dynamic and interactive content that keeps learners interested and motivated. Our modules use multimedia resources like videos, quizzes, and gamified elements to create an enjoyable learning experience.</p>
                     </div>
                 </li>
-                <li class="list-group-item feature-item">
+                <li class="list-group-item feature-item p-4 border-b">
                     <i class="feature-icon fas fa-user-check"></i>
                     <div>
-                        <h5>Personalized Learning Paths</h5>
+                        <h5 class="font-semibold">Personalized Learning Paths</h5>
                         <p>Each learner has unique needs and goals. Our platform creates tailored learning paths that adapt to individual progress, allowing users to focus on areas that require more attention.</p>
                     </div>
                 </li>
-                <li class="list-group-item feature-item">
+                <li class="list-group-item feature-item p-4 border-b">
                     <i class="feature-icon fas fa-comments"></i>
                     <div>
-                        <h5>Real-Time Feedback</h5>
+                        <h5 class="font-semibold">Real-Time Feedback</h5>
                         <p>Instant feedback helps learners understand their strengths and areas for improvement. Our system provides real-time insights after quizzes and assignments, guiding users to achieve better results.</p>
                     </div>
                 </li>
-                <li class="list-group-item feature-item">
+                <li class="list-group-item feature-item p-4 border-b">
                     <i class="feature-icon fas fa-users"></i>
                     <div>
-                        <h5>Community Support and Collaboration</h5>
+                        <h5 class="font-semibold">Community Support and Collaboration</h5>
                         <p>Our platform fosters a collaborative learning environment where users can interact, share resources, and support one another through discussion forums and study groups.</p>
                     </div>
                 </li>
-                <li class="list-group-item feature-item">
+                <li class="list-group-item feature-item p-4 border-b">
                     <i class="feature-icon fas fa-mobile-alt"></i>
                     <div>
-                        <h5>Accessible on All Devices</h5>
+                        <h5 class="font-semibold">Accessible on All Devices</h5>
                         <p>EduStart is designed to be fully responsive, allowing learners to access their courses and materials anytime, anywhere, on any device—be it a computer, tablet, or smartphone.</p>
                     </div>
                 </li>
@@ -101,42 +98,38 @@
         </section>
 
         <section id="future-plans" class="my-5">
-            <h2 class="mb-4">Future Plans</h2>
+            <h2 class="text-3xl font-semibold mb-4">Future Plans</h2>
             <p>At EduStart, we are committed to continuous improvement and innovation. Here are our key future plans:</p>
             <ul class="list-group">
-                <li class="list-group-item">Expand our course offerings to include vocational training and professional development programs.</li>
-                <li class="list-group-item">Integrate artificial intelligence to provide smarter personalized learning experiences.</li>
-                <li class="list-group-item">Develop a mobile app for offline learning capabilities and enhanced accessibility.</li>
-                <li class="list-group-item">Create partnerships with educational institutions and industry leaders to broaden our network and resources.</li>
-                <li class="list-group-item">Launch a scholarship program to support underprivileged students in accessing quality education.</li>
+                <li class="list-group-item p-4 border-b">Expand our course offerings to include vocational training and professional development programs.</li>
+                <li class="list-group-item p-4 border-b">Integrate artificial intelligence to provide smarter personalized learning experiences.</li>
+                <li class="list-group-item p-4 border-b">Develop a mobile app for offline learning capabilities and enhanced accessibility.</li>
+                <li class="list-group-item p-4 border-b">Create partnerships with educational institutions and industry leaders to broaden our network and resources.</li>
+                <li class="list-group-item p-4 border-b">Launch a scholarship program to support underprivileged students in accessing quality education.</li>
             </ul>
         </section>
 
         <section id="team" class="my-5">
-            <h2 class="mb-4">Our Team</h2>
+            <h2 class="text-3xl font-semibold mb-4">Our Team</h2>
             <p>Our diverse team of educators, developers, and innovators is dedicated to reshaping the future of education.</p>
             <ul class="list-group">
-                <li class="list-group-item">Jane Doe - Co-Founder & CEO</li>
-                <li class="list-group-item">John Smith - Co-Founder & CTO</li>
-                <li class="list-group-item">Alice Johnson - Chief Educator</li>
-                <li class="list-group-item">Bob Lee - Head of Marketing</li>
+                <li class="list-group-item p-4 border-b">Jane Doe - Co-Founder & CEO</li>
+                <li class="list-group-item p-4 border-b">John Smith - Co-Founder & CTO</li>
+                <li class="list-group-item p-4 border-b">Alice Johnson - Chief Educator</li>
+                <li class="list-group-item p-4 border-b">Bob Lee - Head of Marketing</li>
             </ul>
         </section>
 
         <section id="contact" class="my-5">
-            <h2 class="mb-4">Contact Us</h2>
+            <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
             <p>If you have any questions or inquiries, feel free to reach out:</p>
-            <p>Email: <a href="mailto:info@edustart.com">info@edustart.com</a></p>
-            <p>Phone: +1 (123) 456-7890</p>
+            <p>Email: <a class="text-blue-600 hover:underline" href="mailto:info@edustart.com">info@edustart.com</a></p>
+            <p>Phone: <span class="text-blue-600">+1 (123) 456-7890</span></p>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-gray-200">
         <p>&copy; 2024 EduStart. All rights reserved.</p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
