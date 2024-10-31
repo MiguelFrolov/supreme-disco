@@ -96,16 +96,15 @@
             description.classList.toggle("hidden");
         }
 
-        // Fetch Current Date and Time
-        async function fetchDateTime() {
-            try {
-                const response = await fetch("http://worldtimeapi.org/api/timezone/Etc/UTC");
-                const data = await response.json();
-                const dateTime = new Date(data.datetime);
-                document.getElementById("date-time").textContent = `Current UTC Date and Time: ${dateTime.toUTCString()}`;
-            } catch (error) {
-                document.getElementById("date-time").textContent = "Unable to load date and time.";
-            }
+        // Display Local Date and Time
+        function displayLocalDateTime() {
+            const now = new Date();
+            document.getElementById("date-time").textContent = `Current Local Date and Time: ${now.toLocaleString()}`;
+            // Update time every second
+            setInterval(() => {
+                const currentTime = new Date();
+                document.getElementById("date-time").textContent = `Current Local Date and Time: ${currentTime.toLocaleString()}`;
+            }, 1000);
         }
 
         // Fetch Daily Quote
@@ -137,7 +136,7 @@
         // Initial page load
         document.addEventListener("DOMContentLoaded", () => {
             renderFeatures();
-            fetchDateTime();
+            displayLocalDateTime();
             fetchQuote();
         });
 
