@@ -109,11 +109,12 @@
         function displayLocalDateTime() {
             const now = new Date();
             document.getElementById("date-time").textContent = `Current Local Date and Time: ${now.toLocaleString()}`;
-            // Update time every second
-            setInterval(() => {
-                const currentTime = new Date();
-                document.getElementById("date-time").textContent = `Current Local Date and Time: ${currentTime.toLocaleString()}`;
-            }, 1000);
+            const addQuotes = Math.random() < 0.5;
+            if(addQuotes)
+            {
+                const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+                document.getElementById("date-time").appendChild(`<span>"${randomQuote.content}" — ${randomQuote.author}</span>`;);
+            }
         }
 
         // Fetch Daily Quote Locally
