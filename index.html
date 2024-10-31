@@ -113,7 +113,9 @@
             if(addQuotes)
             {
                 const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-                document.getElementById("date-time").appendChild(`<span>"${randomQuote.content}" — ${randomQuote.author}</span>`);
+                const spanQuote = document.createElement("span");
+                spanQuote.innerHTML=`"${randomQuote.content}" — ${randomQuote.author}`;
+                document.getElementById("date-time").appendChild(spanQuote);
             }
         }
 
